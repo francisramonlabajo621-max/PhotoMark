@@ -1,0 +1,119 @@
+/* Login and Register Pages - Minimalist Auth Design */
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 2rem 0;
+    animation: fadeIn 0.6s ease;
+}
+
+.auth-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    padding: 3rem;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 4px 24px var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.auth-card:hover {
+    box-shadow: 0 8px 32px var(--shadow-md);
+}
+
+.auth-card h1 {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--text-primary);
+    letter-spacing: -0.5px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.75rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.625rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(42, 42, 42, 0.1);
+}
+
+.form-group input::placeholder {
+    color: var(--text-muted);
+}
+
+.auth-form .btn-primary {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+.auth-link {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.auth-link a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    margin-left: 0.5rem;
+}
+
+.auth-link a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .auth-card {
+        padding: 2rem 1.5rem;
+        border-radius: 0;
+    }
+
+    .auth-card h1 {
+        font-size: 1.75rem;
+    }
+}

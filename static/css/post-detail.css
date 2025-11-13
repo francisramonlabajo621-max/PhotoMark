@@ -1,0 +1,459 @@
+/* Post Detail and Comments Page - Minimalist Design */
+
+/* Post Detail - Ultra Minimalist */
+.post-detail {
+    background-color: transparent;
+    border: none;
+    padding: 0 0 2.5rem 0;
+    margin-bottom: 2.5rem;
+    animation: fadeIn 0.6s ease;
+}
+
+/* Post Header - Minimalist */
+.post-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.post-meta-top {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.post-author,
+.post-date {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-muted);
+}
+
+.post-author i,
+.post-date i {
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+.post-actions-minimal {
+    display: flex;
+    gap: 0.75rem;
+    margin-left: auto;
+}
+
+.action-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.action-link:hover {
+    color: var(--text-primary);
+    transform: translateY(-2px);
+}
+
+.action-delete:hover {
+    color: var(--danger-color);
+}
+
+.post-header h1 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 1.3;
+    color: var(--text-primary);
+    letter-spacing: -0.5px;
+}
+
+/* Post Image - Constrained Size */
+.post-image-large {
+    margin: 2rem auto 2rem auto;
+    max-width: 700px;
+    overflow: hidden;
+    position: relative;
+    animation: fadeIn 0.8s ease;
+}
+
+.post-image-large img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 500px;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.post-image-large:hover img {
+    opacity: 0.95;
+}
+
+/* Post Body - Minimalist */
+.post-body {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--text-primary);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.post-body p {
+    margin-bottom: 1.25rem;
+}
+
+.post-body p:last-child {
+    margin-bottom: 0;
+}
+
+/* Comments Section - Minimalist */
+.comments-section {
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid var(--border-color);
+    padding: 2rem 0 0 0;
+    margin-bottom: 2rem;
+    animation: fadeIn 0.6s ease;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comments-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.comments-section h2 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    letter-spacing: -0.25px;
+}
+
+.comment-count {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding: 0.125rem 0.5rem;
+    background-color: var(--bg-secondary);
+    border-radius: 0;
+}
+
+/* Comment Form - Minimalist */
+.comment-form {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 0.875rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    font-size: 0.9375rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    resize: vertical;
+    min-height: 80px;
+    transition: all 0.3s ease;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+.comment-form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background-color: var(--bg-secondary);
+}
+
+.comment-form textarea::placeholder {
+    color: var(--text-muted);
+}
+
+.btn-comment {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9375rem;
+}
+
+.btn-comment i {
+    font-size: 0.8125rem;
+}
+
+/* Comments List - Minimalist */
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.comment {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.5s ease;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment:hover {
+    padding-left: 0.25rem;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.comment-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--gradient-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    flex-shrink: 0;
+}
+
+.comment-author {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+
+.comment-author strong {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.comment-date {
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
+
+.comment-content {
+    color: var(--text-secondary);
+    line-height: 1.65;
+    font-size: 0.9375rem;
+    margin-left: 52px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.comment-content p {
+    margin: 0;
+}
+
+.no-comments {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.login-prompt {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.login-prompt i {
+    opacity: 0.6;
+}
+
+.login-prompt a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.login-prompt a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+.back-link {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeIn 0.6s ease;
+    animation-delay: 0.4s;
+    animation-fill-mode: both;
+}
+
+.back-link a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+}
+
+.back-link a i {
+    transition: transform 0.3s ease;
+    font-size: 0.875rem;
+}
+
+.back-link a:hover {
+    color: var(--text-primary);
+    gap: 0.75rem;
+}
+
+.back-link a:hover i {
+    transform: translateX(-4px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .post-detail {
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .post-header {
+        padding-bottom: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .post-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .post-meta-top {
+        gap: 1rem;
+        font-size: 0.75rem;
+    }
+
+    .post-actions-minimal {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .post-image-large {
+        margin: 1.5rem 0;
+        max-width: 100%;
+    }
+
+    .post-image-large img {
+        max-height: 400px;
+    }
+
+    .post-body {
+        font-size: 0.9375rem;
+    }
+
+    .comments-section {
+        padding-top: 1.5rem;
+        max-width: 100%;
+    }
+
+    .comment-content {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .comment:hover {
+        padding-left: 0;
+    }
+
+    .back-link {
+        margin-top: 1.5rem;
+        padding-top: 1.25rem;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .comments-section h2 {
+        font-size: 1.25rem;
+    }
+
+    .comment-header {
+        flex-wrap: wrap;
+    }
+
+    .post-meta-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+}
